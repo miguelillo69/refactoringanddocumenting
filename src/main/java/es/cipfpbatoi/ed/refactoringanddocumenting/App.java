@@ -6,18 +6,13 @@ package es.cipfpbatoi.ed.refactoringanddocumenting;
  */
 public class App 
 {
-	public static boolean esMayorDeEdad(int edad)
-	{
-		return edad >= 18;
-	}
-	
-    public static void main( String[] args )
+	public static void main( String[] args )
     {
         System.out.println( "Bienvenido al Programa" );
         
         Estudiante estudiante1 = new Estudiante(10,"pepe");
         
-        if ( esMayorDeEdad (estudiante1.edad) ) {
+        if ( Estudiante.esMayorDeEdad (estudiante1.edad) ) {
         	System.out.println("El estudiante " + estudiante1.nombre + " es mayor de edad");
         } else {
         	System.out.println("El estudiante " + estudiante1.nombre + " es menor de edad");
