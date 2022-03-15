@@ -12,10 +12,11 @@ public class App
         
         Estudiante estudiante1 = new Estudiante(10,"pepe");
         
-        if ( Estudiante.esMayorDeEdad (estudiante1.edad) ) {
-        	System.out.println("El estudiante " + estudiante1.nombre + " es mayor de edad");
+        String textoEstudiante = "El estudiante ";
+		if ( Estudiante.esMayorDeEdad (estudiante1.edad) ) {
+        	System.out.println(textoEstudiante + estudiante1.nombre + " es mayor de edad");
         } else {
-        	System.out.println("El estudiante " + estudiante1.nombre + " es menor de edad");
+        	System.out.println(textoEstudiante + estudiante1.nombre + " es menor de edad");
         }
         
     }
